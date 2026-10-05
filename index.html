@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة الدراسات الاجتماعية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>منصة الدراسات - الصف الثاني الثانوي</h1>
+    </header>
+    
+    <nav>
+        <button onclick="showsection('home')">صفحه الرئيسيه</button>
+        <button onclick="showsection('test')">الامتحان</button>
+        <button onclick="showsection('study')">الملخصات</button>
+    </nav>
+
+<div class="container">
+
+    <section id="home" class="section">
+        <h3>مرحبا بك في منصة الدراسات</h3>
+        <p>الموقع يعمل بدون انترنت مخصوصا للدراسات</p>
+    </section>
+    <h6 class="by"> by: باسم اسلام</h6>
+
+    <section id="test" class="section" style="display: none;">
+        <h3>الاختبار</h3>
+        <p>تبلغ مساحة الصحراء الغربيه نحو كام في المائه</p>
+        <button onclick="checkAnswer('68')" class="answer">68%</button>
+        <button onclick="checkAnswer('20')" class="answer">20%</button>
+        <p id="result"></p>
+    </section>
+
+    
+    <section id="study" class="section" style="display: none;">
+        <h3>الملخصات</h3>
+        <p>ملخص درس الاول</p>
+        <iframe src="سطح مصر.pptx.pdf" frameborder="100" width="980" height="500" class="power">ملخص الدرس الاول</iframe><br>
+        <p>ملخص الدرس الثاني</p>
+        <iframe src="موقع مصر و اهميته.pptx.pdf" frameborder="100" width="980" height="500" class="power">ملخص الدرس الثاني</iframe>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
